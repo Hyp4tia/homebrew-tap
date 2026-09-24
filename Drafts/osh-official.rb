@@ -1,6 +1,8 @@
-# Draft of the cask for submission to homebrew/homebrew-cask.
-# Differences from Casks/osh.rb are deliberate: the official repository does not allow
-# `auto_updates`, formula dependencies, or a duti postflight.
+# frozen_string_literal: true
+
+# Draft for submission to homebrew/homebrew-cask. The differences from Casks/osh.rb
+# are deliberate: the official repository does not allow `auto_updates`, formula
+# dependencies, or install steps.
 cask "osh" do
   version "1.0.10"
   sha256 "44d911fd0a81132bd976c616580d2f1a7ba20f55c820715383cb1043057e1baf"
@@ -16,14 +18,14 @@ cask "osh" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Osh.app"
 
   zap trash: [
     "~/Library/Application Support/Osh",
     "~/Library/Containers/com.zeyadistired.osh",
-    "~/Library/Containers/com.zeyadistired.osh.QuickLook",
+    "~/Library/Containers/com.zeyadistired.osh.QuickLook"
   ]
 
   caveats <<~EOS
