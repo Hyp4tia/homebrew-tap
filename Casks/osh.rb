@@ -4,8 +4,7 @@ cask "osh" do
   version "1.0.10"
   sha256 "44d911fd0a81132bd976c616580d2f1a7ba20f55c820715383cb1043057e1baf"
 
-  url "https://github.com/Hyp4tia/Osh/releases/download/v#{version}/Osh.dmg",
-      verified: "github.com/Hyp4tia/Osh/"
+  url "https://github.com/Hyp4tia/Osh/releases/download/v#{version}/Osh.dmg"
   name "Osh"
   desc "Markdown, Typst and .skill reader, editor and QuickLook extension"
   homepage "https://github.com/Hyp4tia/Osh"
