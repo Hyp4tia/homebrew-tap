@@ -16,8 +16,8 @@ cask "osh" do
   end
 
   auto_updates true
-  depends_on macos: :monterey
   depends_on formula: "duti"
+  depends_on macos: :monterey
 
   app "Osh.app"
 
@@ -33,7 +33,7 @@ cask "osh" do
   zap trash: [
     "~/Library/Application Support/Osh",
     "~/Library/Containers/com.zeyadistired.osh",
-    "~/Library/Containers/com.zeyadistired.osh.QuickLook"
+    "~/Library/Containers/com.zeyadistired.osh.QuickLook",
   ]
 
   caveats <<~EOS

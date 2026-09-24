@@ -25,7 +25,7 @@ cask "osh" do
   zap trash: [
     "~/Library/Application Support/Osh",
     "~/Library/Containers/com.zeyadistired.osh",
-    "~/Library/Containers/com.zeyadistired.osh.QuickLook"
+    "~/Library/Containers/com.zeyadistired.osh.QuickLook",
   ]
 
   caveats <<~EOS
